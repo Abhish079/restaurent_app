@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        .homepage {
+            text-align: center;
+            padding-top: 30px;
+
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .show {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    {{messege}}
+
+    <h1>Registration for the Restaurents! </h1>
+    <form action="/send" method="post">
+        {% csrf_token %}
+        <div class="homepage">
+            <div>
+                <h3>Name of the Restaurent :-<input required autofocus type="text" name="Name"></h3>
+            </div>
+            <div>
+                <h3>Address :-<input required autofocustype="text" name="Address"></h3>
+            </div>
+            <div>
+                <h3>City :-<input required autofocus type="text" name="City"></h3>
+            </div>
+            <div>
+                <h3>State :-<input required autofocus type="text" name="State"></h3>
+            </div>
+            <div>
+                <h3>Owner's name :-<input required autofocus type="text" name="Owner"></h3>
+            </div>
+            <div>
+                <h3>Owner's mob. no. :-<input required autofocus type="integer" name="Phone"></h3>
+            </div>
+            <div>
+                <h3>Type:- VEG <input required autofocus type="radio" name="type" value="VEG"> NON-VEG <input required
+                        autofocus type="radio" name="type" value="NON-VEG"> BOTH <input required autofocus type="radio"
+                        name="type" value="BOTH"></h3>
+            </div>
+            <div>
+                <h3> Date of registration :-<input required autofocus type="date" name='Date'></h3>
+            </div>
+
+            <div>
+                <h3><input type="submit" value="submit now " id="button"></h3>
+            </div>
+        </div>
+        <span>{{messesg}}</span>
+    </form>
+    <form class="show" action="/">
+        <input type="submit" value="SHOW RESTAURENT LIST">
+    </form>
+
+
+</body>
+
+</html>

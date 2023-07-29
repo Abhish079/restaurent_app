@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>THE BOMBAY CANTEEN</title>
+    <style>
+        body {
+            background-image:
+                url("https://ceblog.s3.amazonaws.com/wp-content/uploads/2012/02/beautiful-restaurant-websites.jpg");
+        }
+
+        .contact {
+            margin-top: 0px;
+            padding-bottom: 60px;
+        }
+
+        .contact a {
+            padding: 10px 110px;
+            float: left;
+            color: coral;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: antiquewhite;
+        }
+
+        .contact a:hover {
+            background-color: rgb(52, 54, 49);
+
+        }
+
+        .menu-bar ul {
+            list-style: none;
+        }
+
+        .menu-bar ul li a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .menu-bar ul li a:hover {
+            color:red;
+        }
+
+
+        .dropdown-menu {
+            display: none;
+    
+
+
+        }
+
+        .menu-bar ul li:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            left: 0;
+        
+        }
+
+        .menu-bar ul li:hover .dropdown-menu ul {
+            display: block;
+        }
+
+        .menu-bar ul li:hover .dropdown-menu ul li {
+            width: 120px;
+            padding: 5px;
+        }
+
+
+        .dropdown-menu-1 {
+            display: none;
+
+        }
+
+        .dropdown-menu ul li:hover .dropdown-menu-1 {
+            display: block;
+            position: absolute;
+            left: 100px;
+            margin-left: 70px;
+            margin-top: -45px;
+
+        }
+
+
+
+
+
+        .head {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            color: rgb(43, 14, 170);
+        }
+
+
+
+
+        .items {
+            padding: 0px 192px;
+        }
+
+        .prices {
+            padding: 0px 500px;
+            margin-top: -43px;
+        }
+
+
+        .nonveg {
+            padding: 0px 280px;
+        }
+
+        .veg {
+            padding: 0px 300px;
+        }
+
+        .thead th,
+        td {
+            padding: 10px 50px;
+        }
+
+        .thead {
+            margin-left: 50px;
+        }
+
+        .cveg {
+            padding: 0px 400px;
+
+        }
+
+        .cprices {
+            padding: 0px 650px;
+            margin-top: -43px;
+
+        }
+
+        .citems {
+            padding: 0px 192px;
+        }
+
+        .cnnonveg {
+            padding: 0px 330px;
+        }
+
+        .cnprices {
+            padding: 0px 575px;
+            margin-top: -43px;
+
+        }
+
+        .cnitems {
+            padding: 0px 192px;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        h3 {
+            color: dimgray;
+        }
+
+        td {
+            color: rgb(189, 23, 31);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        .hide {
+            display: none;
+            font-family: cursive;
+        }
+
+        .mydiv {
+            font-size: 25px;
+            padding: 0px 20px;
+            color: green;
+            font-family: cursive;
+
+        }
+
+        .hide {
+            font-size: 20px;
+        }
+
+        .mydiv:hover+.hide {
+            display: block;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact">
+        <a href="#">CONTACT US </a>
+        <a href="#">PHONE NO. :-9876457545</a>
+        <a href="#">gmail:-thebombaycanteen@gmail.com</a>
+    </div>
+
+    <span class="mydiv">About us</span>
+    <div class="hide"> Welcome to The Bombay Canteen. We Love to Serve you fresh food. &hearts;</div>
+
+
+    <div class="menu-bar">
+        <ul>
+            <li class=".menu"><a href="#">MENU <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <a href="#">MAIN-COURSE <i class="fas fa-caret-right"></i></a>
+
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="#">VEG</a></li>
+                                    <li><a href="#">NONVEG</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">CHINESE<i class="fas fa-caret-right"></i></a>
+
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="#">VEG</a></li>
+                                    <li><a href="#">NONVEG</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="head">
+        <h1>THE BOMBAY CANTEEN</h1>
+        <h3> 112/3 Viveknand road,Dwarka,Mumbai,Maharashtra</h3>
+    </div>
+
+    <div>
+        <h1>MEALS:- <h1>
+    </div>
+    <div>
+        <h2>TYPE OF MAIN COURSES WE HAVE :-</h2>
+    </div>
+    <div>
+        <h2 class="veg">------:VEG:-------</h2>
+    </div>
+
+    <h3 class="items">ITEMS</h3>
+    <h3 class="prices">PRICES(RS.)</h3>
+    <table class="thead">
+        <thead>
+            <th>
+                <h3>ITEMS</h3>
+            </th>
+            <th>
+                <h3>FULL</h3>
+            </th>
+            <th>
+                <h3>HALF</h3>
+            </th>
+        </thead>
+        <tr>
+            <td>
+                <li>VEG NANDI:-</li>
+
+            </td>
+            <td>600</td>
+            <td>350</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>VEG DIWANI:-</li>
+
+            </td>
+            <td>800</td>
+            <td>400</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>KAJU CURRY:- </li>
+
+
+            </td>
+            <td>800</td>
+            <td>450</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>CHEESE PEAS CURRY:-</li>
+
+
+            </td>
+            <td>600</td>
+            <td>350</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>PEAS MUSHROOM CURRY:-</li>
+
+
+            </td>
+            <td>699</td>
+            <td>399</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>MUSHROOM KADAI:-</li>
+
+
+            </td>
+            <td>600</td>
+            <td>370</td>
+
+        </tr>
+        <tr>
+            <td>
+
+                <li> GREEN PEASE MASALA:-</li>
+
+
+            </td>
+            <td>700</td>
+            <td>400</td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <li> METHI MATAR MALAI:-</li>
+
+            </td>
+            <td>800</td>
+            <td>400</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> VEG BHUNA:- </li>
+
+
+            </td>
+            <td>500</td>
+            <td>250</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>VEG KADAI:</li>
+
+            </td>
+            <td>600</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>VEG JALFREZI:-</li>
+
+            </td>
+            <td>900</td>
+            <td>450</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>VEG HARIYALI:-</li>
+
+
+            </td>
+            <td>700</td>
+            <td>400</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>VEG AFABI:-</li>
+
+
+            </td>
+            <td>800</td>
+            <td>450</td>
+
+        </tr>
+
+
+
+
+
+    </table>
+    <div>
+
+        <h2 class="nonveg">------:NON-VEG:------</h2>
+    </div>
+
+    <h3 class="items">ITEMS</h3>
+    <h3 class="prices">PRICES(RS.)</h3>
+    <table class="thead">
+        <thead>
+            <th>
+                <h3>ITEMS</h3>
+            </th>
+            <th>
+                <h3>FULL</h3>
+            </th>
+            <th>
+                <h3>HALF</h3>
+            </th>
+        </thead>
+        <tr>
+            <td>
+                <li> BUTTER CHICKEN :-</li>
+            </td>
+            <td>900</td>
+            <td>500</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> SURMAI MASALA:-</li>
+            </td>
+            <td>800</td>
+            <td>450</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>GAVRAN CHICKEN HANDI:- </li>
+
+            </td>
+            <td>750</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>POMFRET MALVANI:- </li>
+
+            </td>
+            <td>600</td>
+            <td>600</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>POMFRET MASALA:- </li>
+
+            </td>
+            <td>600</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>GAVRAN CHICKEN HANDI :-</li>
+
+            </td>
+            <td>850</td>
+            <td>400</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>POMFRET CURRY:- </li>
+
+            </td>
+            <td>700</td>
+            <td>400</td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <li>PRAWNS MALVANI:-</li>
+
+            </td>
+            <td>600</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>CHICKEN HANDI:-</li>
+
+            </td>
+            <td>750</td>
+            <td>400</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>PRAWNS CURRY:- </li>
+
+            </td>
+            <td>600</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>MURG MUSSALLAM:- </li>
+
+            </td>
+            <td>900</td>
+            <td>500</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>PRAWNS MARATHA :- </li>
+
+            </td>
+            <td>800</td>
+            <td>450</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li>CHICKEN ANDHRA CURRY :-</li>
+
+            </td>
+            <td>500</td>
+            <td>250</td>
+
+        </tr>
+
+    </table>
+    <div>
+        <h1>MENU-CHINESE:- <h1>
+    </div>
+    <h2 class="cveg">------:VEG:------</h2>
+    <h3 class="citems">ITEMS</h3>
+    <h3 class="cprices">PRICES(Rs.)</h3>
+    <table class="thead">
+        <thead>
+            <th>
+                <h3>ITEMS</h3>
+            </th>
+            <th>
+                <h3>FULL</h3>
+            </th>
+            <th>
+                <h3>HALF</h3>
+            </th>
+        </thead>
+        <tr>
+            <td>
+                <li> SWEET & SOUR VEGETABLES :-</li>
+
+            </td>
+            <td>300</td>
+            <td>150</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> MUSHROOM CHILLY(GRAVY) :-</li>
+
+            </td>
+            <td>400</td>
+            <td>200</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> MUSHROOM MANCHURIAN(GRAVY) :- </li>
+
+
+            </td>
+            <td>350</td>
+            <td>190</td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <li> VEG IN HOT GREEN SAUCE :-</li>
+            </td>
+            <td>200</td>
+            <td>120</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> VEG CASHEWNUT :-</li>
+
+
+            </td>
+            <td>400</td>
+            <td>200</td>
+
+        </tr>
+        <tr>
+            <td>
+
+                <li> VEG CHOW CHOW :-</li>
+            </td>
+            <td>300</td>
+            <td>175</td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <li> MUSHROOM & BABYCORNIN HOT GREEN SAUCE:-</li>
+
+            </td>
+            <td>600</td>
+            <td>600</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> VEG BHUNA:- </li>
+            </td>
+            <td>500</td>
+            <td>250</td>
+    </table>
+    <h2 class="cnnonveg">------:NON-VEG:------</h2>
+    <h3 class="cnitems">ITEMS</h3>
+    <h3 class="cnprices">PRICES(RS.)</h3>
+    <table class="thead">
+        <thead>
+            <th>
+                <h3>ITEMS</h3>
+            </th>
+            <th>
+                <h3>FULL</h3>
+            </th>
+            <th>
+                <h3>HALF</h3>
+            </th>
+        </thead>
+        <tr>
+            <td>
+                <li> CHICKEN CHILLY(GRAVY):-</li>
+
+            </td>
+            <td>500</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> DICED LAMB SCHEZWAN :-</li>
+
+            </td>
+            <td>450</td>
+            <td>250</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> SLICED LAMB WITH MUSHROOM :- </li>
+
+
+            </td>
+            <td>600</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> LAMB WITH BLACK PEPPER SAUCE :-</li>
+
+
+            </td>
+            <td>400</td>
+            <td>200</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> ROASTED LAMB IN HONEY SAUCE:-</li>
+            </td>
+            <td>400</td>
+            <td>200</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> CHICKEN IN GREEN GARLIC SAUCE:-</li>
+
+
+            </td>
+            <td>500</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+
+                <li> HONG KONG CHICKEN :-</li>
+            </td>
+            <td>600</td>
+            <td>350</td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <li> GINGER CHICKEN IN HONEY SAUCE:-</li>
+
+            </td>
+            <td>500</td>
+            <td>300</td>
+
+        </tr>
+        <tr>
+            <td>
+                <li> SWEET & SOUR CHICKEN:- </li>
+            </td>
+            <td>450</td>
+            <td>275</td>
+        </tr>
+        <tr>
+            <td>
+                <li>CHICKEN MANCHURIAN(GRAVY) :- </li>
+            </td>
+            <td>400</td>
+            <td>200</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
